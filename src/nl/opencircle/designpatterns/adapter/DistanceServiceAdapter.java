@@ -2,7 +2,7 @@ package nl.opencircle.designpatterns.adapter;
 
 public class DistanceServiceAdapter implements DistanceService {
 
-    private USDistanceService adaptee = new USDistanceService();
+    private final USDistanceService adaptee = new USDistanceService();
 
     @Override
     public long getDistance(String cityA, String cityB) {
